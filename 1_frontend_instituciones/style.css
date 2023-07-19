@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+header{
+    background-color: rgb(102, 68, 16);
+    width: 100%;
+    height: 150px;
+
+}
+
+#titulo_principal{
+    background-image: url('/1_frontens_instituciones/img/banner_titulo.png');
+    /* background-color: rgb(116, 230, 10); */
+    width: 100%;
+    height: 400px;
+    overflow-y: hidden;
+    
+}
+
+#titulo-empresas{
+    font-family: metropolis;
+    font-size: 60pt;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 18%;
+}
+
+
+
+#info_empresas{
+    background-color: rgb(255, 255, 255);
+    font-family: metropolis;
+    font-size: 15pt;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    margin-top: 50px;
+    
+    
+}
+
+#productos{
+    /* background-color: rgba(100, 100, 100, 0.582); */
+    width: 100%;
+    height:1400px;
+    overflow-y: hidden;
+}
+
+#titulo-productos{
+    font-family: metropolis;
+    font-size: 60pt;
+    color: #77C6C2;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#container{
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: metropolis;
+    max-width: 2000px;
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+#cards{
+    width: 20%;
+    /* margin: 50px 50px 50px 50px ; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+    
+}
+
+#cards:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+#cards img{
+    max-width: 100%;
+    height: auto;
+}
+
+#cards #contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+#cards #contenido h5{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+#cards #contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #3fa09b;
+    border: 1px solid #3fa09b;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+#cards #contenido a:hover{
+    background: #3fa09b;
+    color: #fff;
+}
+
+#formulario{
+    /* background-color: rgb(245, 147, 0); */
+    width: 100%;
+    height: 1100px;
+    position: relative;
+    
+}
+
+#form{
+    background-color: rgb(9, 163, 168);
+    width: 55%;
+    height: 1100px;
+    position: absolute;
+}
+
+#img-muestra{
+    /* background-color: rgb(102, 16, 88); */
+    width: 45%;
+    height: 1100px;
+    position: absolute;
+    left: 60%;
+}
+
+#img_derecha{
+    max-width: 100%;
+    height: auto; 
+    margin-left: 5px;
+    border-radius: 6px;
+    
+}
+
+
+
+
+
+
+footer{
+    background-color: rgb(102, 68, 16);
+    width: 100%;
+    height: 200px;
+}
