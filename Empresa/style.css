@@ -177,30 +177,20 @@ input {
 }
 
 .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 15px;
-  width: 15px;
-  background-color: #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
 }
 
-.checkbox_productos:hover input ~ .checkmark {
-  background-color: #3fa09b;
+.checkbox_productos:hover input~.checkmark {
+    background-color: #3fa09b;
 }
 
-.checkbox_productos input:checked ~ .checkmark {
-  background-color: #3fa09b;
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.checkbox_productos input:checked ~ .checkmark:after {
-  display: block;
+.checkbox_productos input:checked~.checkmark {
+    background-color: #3fa09b;
 }
 
 textarea {
@@ -252,17 +242,6 @@ p {
     font-size: 14px;
     color: #0e0e0e;
 }
-
-
-::-webkit-input-placeholder {
-    color: #a8a8a8;
-}
-
-
-::-webkit-textarea-placeholder {
-    color: #a8a8a8;
-}
-
 
 .formulario input:focus {
     outline: 0;
