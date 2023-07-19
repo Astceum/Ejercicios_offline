@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -6,23 +6,23 @@
     cursor: default;
 }
 
-header{
+header {
     background-color: rgb(102, 68, 16);
     width: 100%;
     height: 150px;
 
 }
 
-#titulo_principal{
+#titulo_principal {
     background-image: url('../Empresa/img/banner_titulo.png');
     /* background-color: rgb(116, 230, 10); */
     width: 100%;
     height: 400px;
     overflow-y: hidden;
-    
+
 }
 
-#titulo-empresas{
+#titulo-empresas {
     font-family: metropolis;
     font-size: 60pt;
     color: white;
@@ -34,7 +34,7 @@ header{
 
 
 
-#info_empresas{
+#info_empresas {
     background-color: rgb(255, 255, 255);
     font-family: metropolis;
     font-size: 15pt;
@@ -42,18 +42,18 @@ header{
     height: 400px;
     text-align: center;
     margin-top: 50px;
-    
-    
+
+
 }
 
-#productos{
+#productos {
     /* background-color: rgba(100, 100, 100, 0.582); */
     width: 100%;
-    height:1400px;
+    height: 1400px;
     overflow-y: hidden;
 }
 
-#titulo-productos{
+#titulo-productos {
     font-family: metropolis;
     font-size: 60pt;
     color: #77C6C2;
@@ -61,9 +61,9 @@ header{
     margin-top: 10px;
 }
 
-#container{
+#container {
     width: 100%;
-    
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -73,10 +73,10 @@ header{
     margin: 20px;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
-#cards{
+#cards {
     width: 20%;
     /* margin: 50px 50px 50px 50px ; */
     margin-top: 50px;
@@ -86,32 +86,32 @@ header{
     border-radius: 6px;
     overflow: hidden;
     background: #fff;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     transition: all 400ms ease;
-    
+
 }
 
-#cards:hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+#cards:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-3%);
 }
 
-#cards img{
+#cards img {
     max-width: 100%;
     height: auto;
 }
 
-#cards #contenido{
+#cards #contenido {
     padding: 15px;
     text-align: center;
 }
 
-#cards #contenido h5{
+#cards #contenido h5 {
     line-height: 1.5;
     color: #6a6a6a;
 }
 
-#cards #contenido a{
+#cards #contenido a {
     text-decoration: none;
     display: inline-block;
     padding: 10px;
@@ -122,27 +122,177 @@ header{
     transition: all 400ms ease;
 }
 
-#cards #contenido a:hover{
+#cards #contenido a:hover {
     background: #3fa09b;
     color: #fff;
 }
 
-#formulario{
+#formulario {
     /* background-color: rgb(245, 147, 0); */
     width: 100%;
     height: 1100px;
     position: relative;
-    
+
 }
 
-#form{
-    background-color: rgb(9, 163, 168);
+#form {
     width: 55%;
     height: 1100px;
     position: absolute;
 }
 
-#img-muestra{
+.contact_form {
+    width: 100%;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+
+input {
+    background-color: #fbfbfb;
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #3fa09b;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.checkbox_productos {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    margin-left: 10px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox_productos input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+}
+
+.checkbox_productos:hover input ~ .checkmark {
+  background-color: #3fa09b;
+}
+
+.checkbox_productos input:checked ~ .checkmark {
+  background-color: #3fa09b;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox_productos input:checked ~ .checkmark:after {
+  display: block;
+}
+
+textarea {
+    background-color: #fbfbfb;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #3fa09b;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+
+label {
+    display: block;
+    float: center;
+}
+
+
+button {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #3fa09b;
+    border-color: #3fa09b;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
+    cursor: pointer;
+}
+
+
+button p {
+    color: #fff;
+}
+
+
+span {
+    color: #ab4493;
+}
+
+
+.aviso {
+    font-size: 13px;
+    color: #0e0e0e;
+}
+
+p {
+    font-size: 14px;
+    color: #0e0e0e;
+}
+
+
+::-webkit-input-placeholder {
+    color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+    color: #a8a8a8;
+}
+
+
+.formulario input:focus {
+    outline: 0;
+    border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus {
+    outline: 0;
+    border: 1px solid #97d848;
+}
+
+#img-muestra {
     /* background-color: rgb(102, 16, 88); */
     width: 45%;
     height: 1100px;
@@ -150,12 +300,12 @@ header{
     left: 60%;
 }
 
-#img_derecha{
+#img_derecha {
     max-width: 100%;
-    height: auto; 
+    height: auto;
     margin-left: 5px;
     border-radius: 6px;
-    
+
 }
 
 
@@ -163,7 +313,7 @@ header{
 
 
 
-footer{
+footer {
     background-color: rgb(102, 68, 16);
     width: 100%;
     height: 200px;
