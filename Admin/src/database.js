@@ -1,11 +1,19 @@
-const mongoose = require('mongoose')
+require('dotenv/config');
+const mongoose = require('mongoose');
 
-const MONGODB_URI ='mongodb://localhost/notes-app'
+const MONGODB_URI =process.env.MONGO_URL
 
 mongoose.connect(MONGODB_URI, {
     useUnifiedTopology: true,
     useNewUrlParser: true
 })
 
-    .then(db => console.log('Database is connected'))
-    .catch(err=> console.log(err));
+const db = mongoose.connection;
+
+db.on('error', console.error.bind(console, 'Error de conexión:'));
+db.once('open', () => {
+  console.log('¡Conexión exitosa a la base de datos!');
+});
+
+module.exports = db;
+   
